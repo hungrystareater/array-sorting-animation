@@ -1,5 +1,4 @@
 * {
-	font-family: Helvetica;
 	box-sizing: border-box;
 }
 
@@ -144,9 +143,7 @@ input[type=range]:focus::-ms-fill-upper {
   background: rgba(255, 255, 255, 0.5);
 }
 @supports (-ms-ime-align:auto) {
-  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
   input[type=range] {
     margin: 7px 0 15px 0 0;
-    /*Edge starts the margin from the thumb, not the track as other browsers do*/
   }
 }
