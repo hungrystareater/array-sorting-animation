@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<div id="control-panel">
+			<label class="range-label" for="height-range" id="height-range-label">Height: 15</label>
+			<input type="range" min="10" max="100" value="15" class="slider" id="height-range" name="height-range">
+			<label class="range-label" for="width-range" id="width-range-label">Width: 60</label>
+			<input type="range" min="10" max="300" value="60" class="slider" id="width-range" name="width-range">
+			<label class="range-label" for="scale-range" id="scale-range-label">Scale: 10</label>
+			<input type="range" min="3" max="30" value="10" class="slider" id="scale-range" name="scale-range">
+			<label class="range-label" for="speed-range" id="speed-range-label">Frame delay (ms): 10</label>
+			<input type="range" min="10" max="200" value="10" class="slider" id="speed-range" name="speed-range">
+			<label class="range-label" for="skip-range" id="skip-range-label">Skip frames: 0</label>
+			<input type="range" min="0" max="200" value="0" class="slider" id="skip-range" name="skip-range">
+			<select id="algo-select">
+				<option value="Bubble">Bubble</option>
+				<option value="Selection">Selection</option>
+				<option value="Insertion">Insertion</option>
+				<option value="Shell">Shell</option>
+			</select>
+			<button class="control-button" id="control-button">Go!</button>
+		</div>
+		<div id="graphic-container">
+			<canvas id="canvas-box" width="200" height="100">
+		</div>
+		<script src="scripts.js" type="module"></script>
+	</body>
+</html>
